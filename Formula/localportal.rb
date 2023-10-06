@@ -6,10 +6,10 @@ class Localportal < Formula
 
   if Hardware::CPU.intel?
     url "https://storage.localportal.io/cli/#{version}/localportal-darwin-amd64-#{version}.tar.gz"
-    sha256 "0dcd299ba8940cfe695d2298e6a5412e6355b9e09409c5f5e64ffce5e8babce0"
+    sha256 "e493cae78f108d856d8a5aed971c837f5ff6c7bbb1a951294d90ceed0faf0432"
   elsif Hardware::CPU.arm?
     url "https://storage.localportal.io/cli/#{version}/localportal-darwin-arm64-#{version}.tar.gz"
-    sha256 "539aaeafce8c0fb784304cb84f5cccafd8f2f71bd672593315fdbb5d1f2c2fdb"
+    sha256 "a39b33f1055946c41404b242df9065cc2261b06c3a610b13b40779a67696e890"
   end
 
   def install
