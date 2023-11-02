@@ -1,15 +1,15 @@
 class Localportal < Formula
   desc "localportal.io, Normalize serving from localhost"
   homepage "https://localportal.io"
-  version "0.2.3"
+  version "0.2.4"
   depends_on "ttyd"
 
   if Hardware::CPU.intel?
     url "https://storage.localportal.io/cli/#{version}/localportal-darwin-amd64-#{version}.tar.gz"
-    sha256 "9e46e57df761b3bd9b0d8fbb502ced46480a3050c9a58a030594a46b304f6708"
+    sha256 "4ff991503fc85359e5f83494e72c599b4ee7c0b5edcfa49a23a307d404486aca"
   elsif Hardware::CPU.arm?
     url "https://storage.localportal.io/cli/#{version}/localportal-darwin-arm64-#{version}.tar.gz"
-    sha256 "198ea7dde06aabc3ade081f8d2166b0a4957fc9400e5515eef01470487129702"
+    sha256 "6cd1c9f6ec2cb9271cce92ca3f73e0e3f8a3b3ff6c95244a3abd8ff90f1d6db9"
   end
 
   def install
